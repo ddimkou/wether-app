@@ -1,0 +1,63 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/assets/images/bg.jpg);
+  background-color: black;
+  font-size: 110%;
+}
+.card {
+  background-color: #000000b4;
+  color: wheat;
+  padding: 2em;
+  border-radius: 30px;
+  max-width: 20em;
+  /* to width 100% prepei na alla3ei stis suskeues */
+  width: 100%;
+}
+/* SEARCH AREA */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 0.8em;
+  border-radius: 1em;
+  background-color: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 110%;
+  width: 80%;
+}
+.search input.search-bar:hover {
+  background-color: #7c7c7c6b;
+  transition: 0.4s ease-in-out;
+}
+.search button {
+  border-radius: 50%;
+  border: none;
+  margin-left: 0.5em;
+  height: 42.7px;
+  width: 42.7px;
+  background-color: #7c7c7c2b;
+  color: white;
+}
+.search button:hover {
+  background-color: #7c7c7c6b;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/* WEATHER INFO AREA */
+.weather h1 {
+  margin: 0;
+}
