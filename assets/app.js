@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const fetchApi = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
     );
+    if (fetchApi.status === 404) {
+      // Display error message
+      alert("City not found. Please enter a valid city name.");
+      return;
+    }
     const result = await fetchApi.json();
     // console.log(result);
     cityHTML.innerText = `Weather in ${result.name}`;

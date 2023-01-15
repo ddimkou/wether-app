@@ -83,3 +83,18 @@ body {
   position: absolute;
   top: 0;
 }
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  body .card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .flex {
+    justify-content: center;
+  }
+}
